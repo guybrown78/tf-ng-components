@@ -7,11 +7,6 @@
 
 # dependencies
 /node_modules
-/projects/tf-ng-form-components/node_modules
-
-# profiling files
-chrome-profiler-events.json
-speed-measure-plugin.json
 
 # IDEs and editors
 /.idea
@@ -28,7 +23,6 @@ speed-measure-plugin.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
 
 # misc
 /.sass-cache

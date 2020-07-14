@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "tf-ng-form-components": [
+        "dist/tf-ng-form-components"
+      ],
+      "tf-ng-form-components/*": [
+        "dist/tf-ng-form-components/*"
+      ]
+    }
   }
 }

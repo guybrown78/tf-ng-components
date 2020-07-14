@@ -130,6 +130,41 @@
           }
         }
       }
+    },
+    "tf-ng-form-components": {
+      "root": "projects/tf-ng-form-components",
+      "sourceRoot": "projects/tf-ng-form-components/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/tf-ng-form-components/tsconfig.lib.json",
+            "project": "projects/tf-ng-form-components/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/tf-ng-form-components/src/test.ts",
+            "tsConfig": "projects/tf-ng-form-components/tsconfig.spec.json",
+            "karmaConfig": "projects/tf-ng-form-components/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/tf-ng-form-components/tsconfig.lib.json",
+              "projects/tf-ng-form-components/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "tf-ng-components"
