@@ -51,7 +51,7 @@ export class TfNgCheckboxComponent implements ControlValueAccessor {
     }
   }
   writeValue(value: any): void {
-    this.value = value;
+    this.value = this.checked = value;
   }
   registerOnChange(fn: (_: any) => void): void {
     this._onChangeCallback = fn;
