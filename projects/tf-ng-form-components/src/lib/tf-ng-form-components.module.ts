@@ -8,6 +8,7 @@ import { TfNgRadioComponent } from './tf-ng-radio/tf-ng-radio.component';
 import { TfNgRadioGroupComponent } from './tf-ng-radio-group/tf-ng-radio-group.component';
 import { TfNgSelectComponent } from './tf-ng-select/tf-ng-select.component';
 import { TfNgTextareaComponent } from './tf-ng-textarea/tf-ng-textarea.component';
+import { TfNgFileSelectComponent } from './tf-ng-file-select/tf-ng-file-select.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { TfNgTextareaComponent } from './tf-ng-textarea/tf-ng-textarea.component
 		TfNgRadioComponent, 
 		TfNgRadioGroupComponent, 
 		TfNgSelectComponent, 
-		TfNgTextareaComponent
+		TfNgTextareaComponent, 
+		TfNgFileSelectComponent
 	],
   imports: [
   ],
@@ -29,7 +31,8 @@ import { TfNgTextareaComponent } from './tf-ng-textarea/tf-ng-textarea.component
 		TfNgRadioComponent, 
 		TfNgRadioGroupComponent, 
 		TfNgSelectComponent, 
-		TfNgTextareaComponent
+		TfNgTextareaComponent,
+		TfNgFileSelectComponent
 	],
 	schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
