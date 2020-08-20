@@ -28,6 +28,7 @@ export class TfNgInputComponent implements OnInit, ControlValueAccessor {
 	@Input() inputHint: string;
 	@Input() autoComplete: string;
 	@Input() required: boolean;
+	@Input() disabled: boolean;
 	@Input() hideLabel: boolean;
 	@Input() icon: string;
 	@Input() iconPosition: string;

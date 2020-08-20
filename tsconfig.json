@@ -24,6 +24,12 @@
       ],
       "tf-ng-form-components/*": [
         "dist/tf-ng-form-components/*"
+      ],
+      "tf-ng-core": [
+        "dist/tf-ng-core"
+      ],
+      "tf-ng-core/*": [
+        "dist/tf-ng-core/*"
       ]
     }
   }
