@@ -1,0 +1,15 @@
+<header>
+
+	<div class="app-logo-container">
+		<div class="app-logo">
+			<tf-ng-hexagon 
+				class="app-logo-icon"
+				[ngClass]="isLogoClickable ? 'clickable' :''"
+				(click)="onProductLogoClicked($event)"
+			></tf-ng-hexagon>
+			<h1 class="app-logo-title">{{ appTitle }}</h1>
+		</div>
+	</div>
+
+	
+</header>

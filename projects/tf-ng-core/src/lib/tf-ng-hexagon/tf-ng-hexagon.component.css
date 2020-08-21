@@ -1,0 +1,29 @@
+.hex-container{
+	position: relative;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hex{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top:0;
+	left: 0;
+	z-index: 10;
+}
+.hex-outline{
+	fill:currentColor;
+
+	/* fill-current transition duration-150 ease-in-out; */
+}
+
+.medium{
+	width:40px;
+	height:46px;
+}
+.white{
+	color:#FFFFFF;
+}

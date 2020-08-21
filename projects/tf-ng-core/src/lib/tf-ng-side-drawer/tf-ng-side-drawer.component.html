@@ -1,0 +1,21 @@
+<div 
+	(click)="onCloseDraw()"
+	class="backdrop" 
+	[ngClass]="opened ? 'opened' : 'closed'"
+></div>
+<aside 
+	class="side-drawer" 
+	[ngClass]="opened ? 'opened' : 'closed'"
+>
+	<header>
+		<div class="header-icon-container">
+			<div class="close-icon">
+				<tf-ng-hexagon (click)="onCloseDraw()"></tf-ng-hexagon>
+			</div>
+		</div>
+	</header>
+
+	<main class="side-drawer-main">
+		<ng-content></ng-content>
+	</main>
+</aside>

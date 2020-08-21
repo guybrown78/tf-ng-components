@@ -1,21 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { TfNgCoreModule } from '../../projects/tf-ng-core/src/public-api';
-import { NavigationComponent } from './navigation/navigation.component'
+import { TfNgFormComponentsModule } from '../../projects/tf-ng-form-components/src/public-api'
 @NgModule({
   declarations: [
-    AppComponent,
-    NavigationComponent
+    AppComponent
   ],
   imports: [
 		BrowserModule,
 		FormsModule,
 		ReactiveFormsModule,
-		TfNgCoreModule
+		TfNgFormComponentsModule
   ],
   providers: [],
-	bootstrap: [AppComponent]
+	bootstrap: [AppComponent],
+	schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

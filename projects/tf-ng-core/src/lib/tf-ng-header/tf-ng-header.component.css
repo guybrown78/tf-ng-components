@@ -1,0 +1,43 @@
+header{
+	padding: 0 1.4rem;
+	margin-bottom: 1.4rem;
+	height:74px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.app-logo-container{
+	display: flex;
+	align-items: flex-end;
+}
+
+.app-logo{
+	display: flex;
+	align-items: center;
+}
+
+.app-logo-icon{
+	/* blue text ? */
+}
+.app-logo-icon.clickable{
+	cursor: pointer;
+}
+
+.app-logo-title{
+	margin-left: 0.75rem;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1.25;
+	font-weight: 400;
+	display: none;
+}
+
+@media (min-width: 640px) {
+	.app-logo-title{
+		display: block;
+	}
+}
