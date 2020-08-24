@@ -8,7 +8,9 @@ import { TfNgToggleDrawerService } from '../tf-ng-toggle-drawer.service';
 })
 export class TfNgHeaderComponent implements OnInit {
 	@Input("is-logo-clickable") isLogoClickable:boolean = true;
+	@Input("show-app-logo") showAppLogo:boolean = true;
 	@Input("app-title") appTitle:string = "";
+	@Input("app-code") appCode:string = "";
   constructor(	
 		private toggleService: TfNgToggleDrawerService
 	) { }
@@ -17,6 +19,8 @@ export class TfNgHeaderComponent implements OnInit {
   }
 
 	onProductLogoClicked(event){
-		this.toggleService.announceToggle(true);
+		if(this.isLogoClickable){
+			this.toggleService.announceToggle(true);
+		}
 	}
 }

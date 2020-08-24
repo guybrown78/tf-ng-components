@@ -1,0 +1,94 @@
+.initials{
+	position: relative;
+	display: flex;
+}
+.fallback-initials{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.fallback-initials h2{
+	margin:0;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}	
+.initials-svg{
+	width:100%;
+	height:100%;
+}
+
+
+.medium{
+	width:40px;
+	height:46px;
+}
+.size-xs{
+	width:30px;
+	height:34px;
+}
+.size-s{
+	width:35px;
+	height:40px;
+}
+.size-m, 
+.size-default{
+	width:40px;
+	height:46px;
+}
+.size-l{
+	width:45px;
+	height:52px;
+}
+.size-xl{
+	width:50px;
+	height:58px;
+}
+
+.fallback-initials h2.size-xs{
+	line-height: 16px;
+	font-size: 16px;
+}
+.fallback-initials h2.size-s{
+	line-height: 18px;
+	font-size: 18px;
+}
+.fallback-initials h2.size-m,
+.fallback-initials h2.size-default{
+	line-height: 20px;
+	font-size: 20px;
+}
+.fallback-initials h2.size-l{
+	line-height: 21px;
+	font-size: 21px;
+}
+.fallback-initials h2.size-xl{
+	line-height: 23px;
+	font-size: 23px;
+}
+
+.grey{
+	color: #D0DFE3;
+}
+.default, .white{
+	color: #FFFFFF;
+}
+.navy{
+	color: #363154;
+}
+.blue{
+	color: #224595;
+}
+.aqua{
+	color: #32F7DC;
+}

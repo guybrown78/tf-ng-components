@@ -1,0 +1,31 @@
+
+section{
+	margin-bottom: 1.4rem;
+	border-radius: 0.75rem;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+section.padding-default{
+	padding: 0.9375rem 1.4rem;
+}
+section.padding-none{
+	padding: 0;
+}
+section.default, section.grey{
+	background-color: #D0DFE3;
+}
+section.white{
+	background-color: #FFFFFF;
+}
+section.navy{
+	background-color: #363154;
+}
+section.blue{
+	background-color: #224595;
+}
+section.aqua{
+	background-color: #32F7DC;
+}
+section.transparent{
+	background-color: transparent;
+	box-shadow: none;
+}

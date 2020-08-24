@@ -10,7 +10,14 @@
 	<header>
 		<div class="header-icon-container">
 			<div class="close-icon">
-				<tf-ng-hexagon (click)="onCloseDraw()"></tf-ng-hexagon>
+				<tf-ng-hexagon 
+					size="l"
+					colour="white"
+					outline-colour="navy"
+					(click)="onCloseDraw()"
+				>
+					<lib-tf-ng-icon-close class="close-svg-icon"></lib-tf-ng-icon-close>
+				</tf-ng-hexagon>
 			</div>
 		</div>
 	</header>

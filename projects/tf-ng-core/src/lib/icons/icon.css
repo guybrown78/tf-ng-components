@@ -1,0 +1,8 @@
+.svg-inline{
+  display: inline-block;
+  font-size: inherit;
+	-webkit-transform-origin: center center;
+	transform-origin: center center; 
+	height: 100%;
+	width: 100%;
+}

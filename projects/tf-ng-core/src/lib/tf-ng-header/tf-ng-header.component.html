@@ -1,12 +1,21 @@
 <header>
 
 	<div class="app-logo-container">
-		<div class="app-logo">
+		<div *ngIf="showAppLogo" class="app-logo">
 			<tf-ng-hexagon 
+				size="l"
+				[colour]="isLogoClickable ? 'gradient' : 'white'"
+				outline-colour="blue"
+				[as-button]="isLogoClickable"
 				class="app-logo-icon"
-				[ngClass]="isLogoClickable ? 'clickable' :''"
 				(click)="onProductLogoClicked($event)"
-			></tf-ng-hexagon>
+			>
+				<tf-ng-product-initials
+					[colour]="isLogoClickable ? 'white' : 'blue'"
+					[code]="appCode"
+					size="l"
+				></tf-ng-product-initials>
+			</tf-ng-hexagon>
 			<h1 class="app-logo-title">{{ appTitle }}</h1>
 		</div>
 	</div>

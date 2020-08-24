@@ -7,13 +7,21 @@ import { TfNgMainContentComponent } from './tf-ng-main-content/tf-ng-main-conten
 import { TfNgSideDrawerComponent } from './tf-ng-side-drawer/tf-ng-side-drawer.component';
 import { TfNgHexagonComponent } from './tf-ng-hexagon/tf-ng-hexagon.component';
 //
-import { TfNgToggleDrawerService } from './tf-ng-toggle-drawer.service'
+import { TfNgToggleDrawerService } from './tf-ng-toggle-drawer.service';
+import { TfNgCardComponent } from './tf-ng-card/tf-ng-card.component';
+import { TfNgProductInitialsComponent } from './tf-ng-product-initials/tf-ng-product-initials.component';
+import { TfNgCardContentComponent } from './tf-ng-card-content/tf-ng-card-content.component';
+import { TfNgIconCloseComponent } from './icons/tf-ng-icon-close/tf-ng-icon-close.component'
 @NgModule({
   declarations: [
 		TfNgCoreComponent, 
 		TfNgHeaderComponent, 
 		TfNgMainContentComponent, 
-		TfNgSideDrawerComponent, TfNgHexagonComponent
+		TfNgSideDrawerComponent, 
+		TfNgHexagonComponent, 
+		TfNgCardComponent, 
+		TfNgProductInitialsComponent, 
+		TfNgCardContentComponent, TfNgIconCloseComponent,
 	],
   imports: [
 		BrowserModule,
@@ -23,7 +31,11 @@ import { TfNgToggleDrawerService } from './tf-ng-toggle-drawer.service'
 		TfNgCoreComponent,
 		TfNgHeaderComponent,
 		TfNgMainContentComponent,
-		TfNgSideDrawerComponent
+		TfNgSideDrawerComponent,
+		TfNgHexagonComponent, 
+		TfNgCardComponent,
+		TfNgProductInitialsComponent,
+		TfNgCardContentComponent,
 	],
 	providers: [
 		TfNgToggleDrawerService

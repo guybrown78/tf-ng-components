@@ -1,0 +1,27 @@
+.card-content{
+	display:block;
+	width:100%;
+	border-radius: 0.25rem;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	padding: 0.25rem 0.75rem;
+}
+
+.grey{
+	background-color: #D0DFE3;
+}
+.default, .white{
+	background-color: #FFFFFF;
+}
+.navy{
+	background-color: #363154;
+}
+.blue{
+	background-color: #224595;
+}
+.aqua{
+	background-color: #32F7DC;
+}
+.transparent{
+	background-color: transparent;
+	box-shadow: none;
+}

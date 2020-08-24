@@ -19,3 +19,29 @@ Navigate to the project dist folder with the command cd `dist/<project-name>`
 `cd dist/tf-ng-core`
 
 Run the command `npm publish` to publish the component the npm.
+
+
+
+
+
+
+--------------
+tf-ng-core
+
+make a component ...
+
+ng g c tf-ng-< COMPONENT NAME > --project tf-ng-core
+
+
+
+BUILD ...
+
+**** UPDATE PACKAGE VERSION ****
+
+ng build tf-ng-core
+
+cd dist/tf-ng-core
+
+npm publish
+
+cd ../../

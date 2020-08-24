@@ -1,7 +1,7 @@
-<tf-ng-side-drawer>
+<tf-ng-side-drawer [opened]="isOpened" (opened-changed)="isOpened=$event">
 	
 	<ul>
-		<li>foo</li>
+		<li (click)="onClick()">foo</li>
 		<li>bar</li>
 		<li>etc</li>
 	</ul>

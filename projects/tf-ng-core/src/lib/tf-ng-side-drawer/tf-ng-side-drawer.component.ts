@@ -1,4 +1,4 @@
-import { Component, OnDestroy  } from '@angular/core';
+import { Component, OnDestroy, Input, Output, EventEmitter  } from '@angular/core';
 import { TfNgToggleDrawerService } from '../tf-ng-toggle-drawer.service';
 import { Subscription, Observable } from 'rxjs';
 
@@ -8,22 +8,28 @@ import { Subscription, Observable } from 'rxjs';
 	styleUrls: ['./tf-ng-side-drawer.component.css']
 })
 export class TfNgSideDrawerComponent implements OnDestroy {
-	opened:boolean = false;
-	// @Input() toggle: boolean;
 	subscription: Subscription;
+
+	@Input('opened')  opened: boolean = false;
+	@Output('opened-changed') openedChanged = new EventEmitter<boolean>();
+	
 	constructor(
 		private toggleService: TfNgToggleDrawerService
 	) {
 		this.subscription = toggleService.toggleAnnounced$.subscribe(
 			(toggle) => {
-				this.opened = toggle;
+				this.toggleOpened(toggle);
 			}
 		)
   }
 
+	toggleOpened(flag:boolean){
+		this.opened = flag;
+		this.openedChanged.emit(flag);
+		this.toggleService.confirmToggle(flag)
+	}
 	onCloseDraw(){
-		this.opened = false;
-		this.toggleService.confirmToggle(false);
+		this.toggleOpened(false);
 	}
 
 	ngOnDestroy() {
