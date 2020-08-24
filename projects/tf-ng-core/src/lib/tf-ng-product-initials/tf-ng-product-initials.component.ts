@@ -14,7 +14,6 @@ export class TfNgProductInitialsComponent implements OnInit {
 
   ngOnInit() {
 		this.clientCode = this.getClientInitials(this.code)
-		console.log("this.clientCode", this.clientCode)
   }
 
 	getClientInitials(code:string){

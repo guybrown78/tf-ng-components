@@ -11,7 +11,15 @@ import { TfNgToggleDrawerService } from './tf-ng-toggle-drawer.service';
 import { TfNgCardComponent } from './tf-ng-card/tf-ng-card.component';
 import { TfNgProductInitialsComponent } from './tf-ng-product-initials/tf-ng-product-initials.component';
 import { TfNgCardContentComponent } from './tf-ng-card-content/tf-ng-card-content.component';
-import { TfNgIconCloseComponent } from './icons/tf-ng-icon-close/tf-ng-icon-close.component'
+import { TfNgIconCloseComponent } from './icons/tf-ng-icon-close/tf-ng-icon-close.component';
+import { TfNgPageTitleBreadcrumbsComponent } from './tf-ng-page-title-breadcrumbs/tf-ng-page-title-breadcrumbs.component';
+import { TfNgIconChevronLeftComponent } from './icons/tf-ng-icon-chevron-left/tf-ng-icon-chevron-left.component';
+import { TfNgIconChevronRightComponent } from './icons/tf-ng-icon-chevron-right/tf-ng-icon-chevron-right.component';
+import { TfNgIconChevronUpComponent } from './icons/tf-ng-icon-chevron-up/tf-ng-icon-chevron-up.component';
+import { TfNgIconChevronDownComponent } from './icons/tf-ng-icon-chevron-down/tf-ng-icon-chevron-down.component';
+import { TfNgIconAddComponent } from './icons/tf-ng-icon-add/tf-ng-icon-add.component';
+import { TfNgClientLogoComponent } from './tf-ng-client-logo/tf-ng-client-logo.component';
+
 @NgModule({
   declarations: [
 		TfNgCoreComponent, 
@@ -21,7 +29,15 @@ import { TfNgIconCloseComponent } from './icons/tf-ng-icon-close/tf-ng-icon-clos
 		TfNgHexagonComponent, 
 		TfNgCardComponent, 
 		TfNgProductInitialsComponent, 
-		TfNgCardContentComponent, TfNgIconCloseComponent,
+		TfNgCardContentComponent, 
+		TfNgIconCloseComponent, 
+		TfNgPageTitleBreadcrumbsComponent, 
+		TfNgIconChevronLeftComponent, 
+		TfNgIconChevronRightComponent, 
+		TfNgIconChevronUpComponent, 
+		TfNgIconChevronDownComponent, 
+		TfNgIconAddComponent, 
+		TfNgClientLogoComponent, 
 	],
   imports: [
 		BrowserModule,
@@ -36,6 +52,8 @@ import { TfNgIconCloseComponent } from './icons/tf-ng-icon-close/tf-ng-icon-clos
 		TfNgCardComponent,
 		TfNgProductInitialsComponent,
 		TfNgCardContentComponent,
+		TfNgPageTitleBreadcrumbsComponent, 
+		TfNgClientLogoComponent, 
 	],
 	providers: [
 		TfNgToggleDrawerService
