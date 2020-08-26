@@ -35,9 +35,19 @@ header{
 	font-weight: 400;
 	display: none;
 }
+.central-contailer{
+	display: none;
+	flex: 1 1 0%;
+	padding: 0 3.125rem;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
 
 @media (min-width: 640px) {
 	.app-logo-title{
 		display: block;
+	}
+	.central-contailer{
+		display: flex;
 	}
 }

@@ -41,9 +41,12 @@
 	outline: none;
 }
 .back-button-icon{
-	width:15px;
-	height:15px;
+	width:18px;
+	height:18px;
 	color: #224595;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	transition-property: color;
 	transition-duration: 150ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

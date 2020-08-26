@@ -23,11 +23,26 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
 .client-logo-image{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.client-logo-image.image-eval{
+	width:auto;
+	height:auto;
+	opacity: 0;
+}
+.client-logo-image.image-width-dominant{
+	width:100%;
+	height:auto;
+	opacity: 1;
+}
+.client-logo-image.image-height-dominant,
+.client-logo-image.image-default{
+	width:auto;
+	height:100%;
+	opacity: 1;
 }

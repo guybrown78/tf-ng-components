@@ -1,0 +1,22 @@
+<div class="stat-card-container">
+	<div 
+		class="stat-header"
+		[ngClass]="[colour]"
+	>
+		<div class="stat-header-title">
+			<ng-content 
+				select="[title]"
+			></ng-content>
+		</div>
+	</div>
+	<div class="stat-data">
+		<div 
+			class="stat-data-content"
+			[ngClass]="[colour]"
+		>
+			<ng-content 
+				select="[data]"
+			></ng-content>
+		</div>
+	</div>
+</div>

@@ -19,6 +19,8 @@ import { TfNgIconChevronUpComponent } from './icons/tf-ng-icon-chevron-up/tf-ng-
 import { TfNgIconChevronDownComponent } from './icons/tf-ng-icon-chevron-down/tf-ng-icon-chevron-down.component';
 import { TfNgIconAddComponent } from './icons/tf-ng-icon-add/tf-ng-icon-add.component';
 import { TfNgClientLogoComponent } from './tf-ng-client-logo/tf-ng-client-logo.component';
+import { TfNgFormCardComponent } from './tf-ng-form-card/tf-ng-form-card.component';
+import { TfNgStatDataCardComponent } from './tf-ng-stat-data-card/tf-ng-stat-data-card.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { TfNgClientLogoComponent } from './tf-ng-client-logo/tf-ng-client-logo.c
 		TfNgIconChevronDownComponent, 
 		TfNgIconAddComponent, 
 		TfNgClientLogoComponent, 
+		TfNgFormCardComponent, 
+		TfNgStatDataCardComponent, 
 	],
   imports: [
 		BrowserModule,
@@ -54,6 +58,8 @@ import { TfNgClientLogoComponent } from './tf-ng-client-logo/tf-ng-client-logo.c
 		TfNgCardContentComponent,
 		TfNgPageTitleBreadcrumbsComponent, 
 		TfNgClientLogoComponent, 
+		TfNgFormCardComponent,
+		TfNgStatDataCardComponent, 
 	],
 	providers: [
 		TfNgToggleDrawerService

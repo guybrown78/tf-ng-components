@@ -1,7 +1,19 @@
 <div class="outer-container">
 	<div class="client-logo-container">
 		<div class="client-logo">
-			
+			<!-- image-eval || image-width-dominant || image-height-dominant || image-default -->
+			<img 
+				#imgRef
+				class="client-logo-image"
+				[ngClass]="[
+					logoImageClass === 'evaluate' ? 'image-eval'
+					: logoImageClass === 'width-dom' ? 'image-width-dominant'
+					: logoImageClass === 'height-dom' ? 'image-height-dominant'
+					: 'image-default'
+				]"
+				[src]="clientLogoSource"
+				(load)="onClientLogoLoaded()"
+			/>
 		</div>
 
 

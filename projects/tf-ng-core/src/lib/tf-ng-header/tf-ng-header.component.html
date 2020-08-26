@@ -20,6 +20,13 @@
 		</div>
 	</div>
 
-	<ng-content></ng-content>
+
+	<div class="central-contailer">
+		<ng-content select="[quickLinks]"></ng-content>
+	</div>
+	
+	<ng-content 
+		select="[clientLogo]"
+	></ng-content>
 	
 </header>
