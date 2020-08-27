@@ -1,4 +1,8 @@
-<div class="stat-card-container">
+<div 
+	class="stat-card-container" 
+	[ngClass]="[colour]"
+>
+
 	<div 
 		class="stat-header"
 		[ngClass]="[colour]"
@@ -9,6 +13,7 @@
 			></ng-content>
 		</div>
 	</div>
+
 	<div class="stat-data">
 		<div 
 			class="stat-data-content"
@@ -19,4 +24,5 @@
 			></ng-content>
 		</div>
 	</div>
+	
 </div>

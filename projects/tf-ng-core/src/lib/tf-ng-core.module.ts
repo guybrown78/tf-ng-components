@@ -21,6 +21,7 @@ import { TfNgIconAddComponent } from './icons/tf-ng-icon-add/tf-ng-icon-add.comp
 import { TfNgClientLogoComponent } from './tf-ng-client-logo/tf-ng-client-logo.component';
 import { TfNgFormCardComponent } from './tf-ng-form-card/tf-ng-form-card.component';
 import { TfNgStatDataCardComponent } from './tf-ng-stat-data-card/tf-ng-stat-data-card.component';
+import { TfNgStatusComponent } from './tf-ng-status/tf-ng-status.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { TfNgStatDataCardComponent } from './tf-ng-stat-data-card/tf-ng-stat-dat
 		TfNgClientLogoComponent, 
 		TfNgFormCardComponent, 
 		TfNgStatDataCardComponent, 
+		TfNgStatusComponent, 
 	],
   imports: [
 		BrowserModule,
@@ -60,6 +62,7 @@ import { TfNgStatDataCardComponent } from './tf-ng-stat-data-card/tf-ng-stat-dat
 		TfNgClientLogoComponent, 
 		TfNgFormCardComponent,
 		TfNgStatDataCardComponent, 
+		TfNgStatusComponent, 
 	],
 	providers: [
 		TfNgToggleDrawerService
