@@ -7,7 +7,43 @@
 
 	</tf-ng-page-title-breadcrumbs>
 	
-	<tf-ng-card colour="navy">
+	<tf-ng-info-panel>
+		<tf-ng-info-panel-item-container>
+			<tf-ng-ph-overview-card 
+				is-active="true" 
+				product-code="bi"
+				product-title="Business Intelligence"
+			></tf-ng-ph-overview-card>
+		</tf-ng-info-panel-item-container>
+		
+		<tf-ng-info-panel-item-container>
+			<tf-ng-ph-overview-card 
+				[is-active]="false" 
+				product-code="lm"
+				product-title="Learning Management"
+				product-description="Training Management is the management application to administrate your corporations training"
+			></tf-ng-ph-overview-card>
+		</tf-ng-info-panel-item-container>
+		
+
+		<tf-ng-info-panel-item-container>
+			<tf-ng-ph-overview-card 
+				[is-active]="false" 
+				product-code="cm"
+				product-title="Competence Management"
+				product-description="Lorum ipsum solar dolar"
+				product-cta="Want to know more about Competence Management? Request a call from your Account Manager"
+				[marketing-cta-as-button]="true"
+			></tf-ng-ph-overview-card>
+		</tf-ng-info-panel-item-container>
+		
+
+	</tf-ng-info-panel>
+
+
+
+	
+	<!-- <tf-ng-card colour="navy">
 		<div class="row">
 			<div class="row-item">
 				<tf-ng-stat-data-card colour="red">
@@ -35,7 +71,7 @@
 		</div>
 		
 
-	</tf-ng-card>
+	</tf-ng-card> -->
 
 	<tf-ng-card>
 		<tf-ng-card-content>

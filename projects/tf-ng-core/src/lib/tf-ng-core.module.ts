@@ -22,6 +22,11 @@ import { TfNgClientLogoComponent } from './tf-ng-client-logo/tf-ng-client-logo.c
 import { TfNgFormCardComponent } from './tf-ng-form-card/tf-ng-form-card.component';
 import { TfNgStatDataCardComponent } from './tf-ng-stat-data-card/tf-ng-stat-data-card.component';
 import { TfNgStatusComponent } from './tf-ng-status/tf-ng-status.component';
+import { TfNgPhOverviewCardComponent } from './tf-ng-ph-overview-card/tf-ng-ph-overview-card.component';
+import { TfNgStatusBeaconComponent } from './tf-ng-status-beacon/tf-ng-status-beacon.component';
+import { TfNgButtonComponent } from './tf-ng-button/tf-ng-button.component';
+import { TfNgInfoPanelComponent } from './tf-ng-info-panel/tf-ng-info-panel.component';
+import { TfNgInfoPanelItemContainerComponent } from './tf-ng-info-panel-item-container/tf-ng-info-panel-item-container.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +49,11 @@ import { TfNgStatusComponent } from './tf-ng-status/tf-ng-status.component';
 		TfNgFormCardComponent, 
 		TfNgStatDataCardComponent, 
 		TfNgStatusComponent, 
+		TfNgPhOverviewCardComponent, 
+		TfNgStatusBeaconComponent, 
+		TfNgButtonComponent, 
+		TfNgInfoPanelComponent, 
+		TfNgInfoPanelItemContainerComponent, 
 	],
   imports: [
 		BrowserModule,
@@ -63,6 +73,10 @@ import { TfNgStatusComponent } from './tf-ng-status/tf-ng-status.component';
 		TfNgFormCardComponent,
 		TfNgStatDataCardComponent, 
 		TfNgStatusComponent, 
+		TfNgPhOverviewCardComponent, 
+		TfNgStatusBeaconComponent, 
+		TfNgInfoPanelComponent, 
+		TfNgInfoPanelItemContainerComponent, 
 	],
 	providers: [
 		TfNgToggleDrawerService

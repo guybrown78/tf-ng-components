@@ -1,0 +1,13 @@
+<button
+	[ngClass]="[
+		colour, 
+		size === 'xl' || size === 'extra-large' ? 'size-xl'
+		: size === 'l' || size === 'large' ? 'size-l'
+		: size === 'm' || size === 'medium' ? 'size-m'
+		: size === 's' || size === 'small' ? 'size-s'
+		: size === 'xs' || size === 'extra-small' ? 'size-xs'
+		: 'size-default'
+	]"
+>
+  <ng-content></ng-content>
+</button>

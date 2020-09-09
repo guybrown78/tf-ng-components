@@ -1,0 +1,76 @@
+<section class="card-container">
+
+	<header class="card-header">
+		{{ cardTitle }}
+	</header>
+
+	<div class="card-face">
+		<div class="card-body">
+			<tf-ng-hexagon 
+				[as-button]="false" 
+				colour="white" 
+				outline-colour="blue" 
+				size="m"
+			>
+				<tf-ng-product-initials
+					colour="blue"
+					[code]="productCode"
+					size="m"
+				></tf-ng-product-initials>
+			</tf-ng-hexagon>
+			<span class="product-title">
+				{{ productTitle }}
+			</span>
+		</div>
+
+		<div class="card-footer">
+			<div class="footer-contents">
+				<tf-ng-status-beacon [colour]="isActive ? 'green' : 'none'"></tf-ng-status-beacon>
+				<span class="status-desc">{{ isActive ? "ACTIVE" : "INACTIVE" }}</span>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="card-over">
+
+		<div 
+			class="card-over-body" 
+			*ngIf="isActive"
+		>
+			<tf-ng-hexagon 
+				[as-button]="false" 
+				colour="navy" 
+				outline-colour="white" 
+				size="xl"
+			>
+				<tf-ng-product-initials
+					colour="white"
+					[code]="productCode"
+					size="xl"
+				></tf-ng-product-initials>
+			</tf-ng-hexagon>
+			<lib-tf-ng-button 
+				colour="aqua"
+				(click)="onProductButtonClicked()"
+			>Open</lib-tf-ng-button>
+		</div>
+
+		<div class="card-over-body" *ngIf="!isActive">
+			<span class="status-desc white">
+				{{ productDescription }}
+			</span>
+
+			<span 
+				class="status-desc aqua"
+				[ngClass]="[
+					marketingCtaAsButton ? 'product-cta' : ''
+				]"
+				(click)="onProductFindOutMoreClicked()"
+			>
+				{{ productCTA }}
+			</span>
+		</div>
+	</div>
+
+</section>

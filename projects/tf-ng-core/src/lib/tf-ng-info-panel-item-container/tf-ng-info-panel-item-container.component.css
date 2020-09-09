@@ -1,0 +1,9 @@
+div{
+	margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+	div{
+		margin-right: 1.5rem;
+	}
+}

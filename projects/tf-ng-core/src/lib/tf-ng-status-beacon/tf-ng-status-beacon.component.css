@@ -1,0 +1,31 @@
+span.status-beacon{
+	display: block;
+	height: 8px;
+	width:8px;
+	border-radius: 4px;
+	margin: 0 3px;
+}
+span.status-beacon.default, span.status-beacon.none{
+	background-color: #ECF2F3;
+}
+span.status-beacon.blue{
+	background-color: #224595;
+}
+span.status-beacon.green{
+	background-color: #40c7a3;
+}
+span.status-beacon.amber{
+	background-color: #b97129;
+}
+span.status-beacon.red{
+	background-color: #b92950;
+}
+span.status-beacon.grey{
+	background-color: #D0DFE3;
+}
+span.status-beacon.aqua{
+	background-color: #32F7DC;
+}
+span.status-beacon.navy{
+	background-color: #363154;
+}

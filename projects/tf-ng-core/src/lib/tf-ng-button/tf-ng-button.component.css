@@ -1,0 +1,109 @@
+button{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	cursor: pointer;
+	transition-property: all;
+	transition-duration: 200ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.size-xs, .size-extra-small{
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	border-radius: 0.25rem;
+}
+.size-s, .size-small{
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-size: 0.875rem;
+	line-height: 1rem;
+	border-radius: 0.375rem;
+}
+.size-m, .size-medium, .size-default{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	border-radius: 0.375rem;
+}
+.size-l, .size-large{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	border-radius: 0.375rem;
+}
+
+.size-xl, .size-extra-large{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	border-radius: 0.375rem;
+}
+
+
+button.default, button.blue{
+	color:#FFFFFF;
+	background-color: #224595;
+}
+/* button.green{
+	color:#FFFFFF;
+	background-color: #40c7a3;
+}
+button.amber{
+	color:#FFFFFF;
+	background-color: #b97129;
+}
+button.red{
+	color:#FFFFFF;
+	background-color: #b92950;
+} */
+button.grey{
+	color:#363154;
+	background-color: #D0DFE3;
+}
+button.aqua{
+	color:#363154;
+	background-color: #32F7DC;
+	outline: 0;
+}
+button.aqua:hover{
+	outline: 0;
+	background-color: #84FAEA; /* 400 */
+}
+button.aqua:active{
+	outline: 0;
+	background-color: #32F7DC; /* 400 */
+	border-color: transparent; 
+}
+button.aqua:focus{
+	outline: 0;
+	background-color: #84FAEA; /* 400 */
+	border-color: #32F7DC; /* 600 */
+	box-shadow: 0 0 0 3px rgba(#84FAEA, 0.5);
+}
+button.navy{
+	color:#FFFFFF;
+	background-color: #363154;
+}
