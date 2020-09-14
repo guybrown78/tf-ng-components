@@ -25,7 +25,13 @@
 	border-left: solid 1px #224595;
 	min-height: 52px;
 }
-
+.right-container{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 1.75rem;
+	padding-left: 0.5rem;
+}
 .back-button{
 	border: none;
 	padding: 0;
@@ -57,8 +63,3 @@
 }
 
 
-/* @media (max-width: 640px) {
-	.content-container{
-		@apply flex-col py-3;
-	}
-} */
