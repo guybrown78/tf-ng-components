@@ -16,7 +16,33 @@
 			/>
 		</div>
 
+		<div class="account-navigation-container" *ngIf="showUserAccount">
+			<tf-ng-hexagon 
+				size="xs"
+				[colour]="isOpen ? 'navy' : 'white'"
+				outline-colour="navy"
+				[as-button]="true"
+				(click)="onToggle()"
+			>
+				<lib-tf-ng-icon-close *ngIf="isOpen" class="account-navigation-icon white"></lib-tf-ng-icon-close>
+				<lib-tf-ng-icon-user *ngIf="!isOpen" class="account-navigation-icon navy"></lib-tf-ng-icon-user>
+			</tf-ng-hexagon>
+		</div>
+	
+	</div>
 
+	<div 
+		*ngIf="showUserAccount"
+		class="dd-panel" 
+		[ngClass]="this.isOpen ? 'show' : 'hide'"
+	>
+		<div class="dd-panel-container dd-panel-grey">
+			<div class="dd-panel-bg">
+				<ng-content 
+					select="[userAccountMenu]"
+				></ng-content>
+			</div>	
+		</div>
 	</div>
 
 </div>

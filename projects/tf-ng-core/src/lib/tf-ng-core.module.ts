@@ -27,6 +27,8 @@ import { TfNgStatusBeaconComponent } from './tf-ng-status-beacon/tf-ng-status-be
 import { TfNgButtonComponent } from './tf-ng-button/tf-ng-button.component';
 import { TfNgInfoPanelComponent } from './tf-ng-info-panel/tf-ng-info-panel.component';
 import { TfNgInfoPanelItemContainerComponent } from './tf-ng-info-panel-item-container/tf-ng-info-panel-item-container.component';
+import { TfNgIconUserComponent } from './icons/tf-ng-icon-user/tf-ng-icon-user.component';
+
 
 @NgModule({
   declarations: [
@@ -53,7 +55,7 @@ import { TfNgInfoPanelItemContainerComponent } from './tf-ng-info-panel-item-con
 		TfNgStatusBeaconComponent, 
 		TfNgButtonComponent, 
 		TfNgInfoPanelComponent, 
-		TfNgInfoPanelItemContainerComponent, 
+		TfNgInfoPanelItemContainerComponent, TfNgIconUserComponent,
 	],
   imports: [
 		BrowserModule,

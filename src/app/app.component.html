@@ -4,46 +4,26 @@
 <tf-ng-main-content>
 	
 	<tf-ng-page-title-breadcrumbs>
-
+		<span>hello</span>
+		<span>dashboard</span>
+		<span>hello</span>
+		<tf-ng-hexagon 
+			size="m" 
+			colour="aqua"
+			outline-colour="aqua"
+			right
+		></tf-ng-hexagon>
 	</tf-ng-page-title-breadcrumbs>
+
+	<tf-ng-card>
+		<p>Lorum ipsum ...</p>
+	</tf-ng-card>
 	
-	<tf-ng-info-panel>
-		<tf-ng-info-panel-item-container>
-			<tf-ng-ph-overview-card 
-				is-active="true" 
-				product-code="bi"
-				product-title="Business Intelligence"
-			></tf-ng-ph-overview-card>
-		</tf-ng-info-panel-item-container>
-		
-		<tf-ng-info-panel-item-container>
-			<tf-ng-ph-overview-card 
-				[is-active]="false" 
-				product-code="lm"
-				product-title="Learning Management"
-				product-description="Training Management is the management application to administrate your corporations training"
-			></tf-ng-ph-overview-card>
-		</tf-ng-info-panel-item-container>
-		
+	<tf-ng-form-card>
+		<p>Lorum ipsum ...</p>
+	</tf-ng-form-card>
 
-		<tf-ng-info-panel-item-container>
-			<tf-ng-ph-overview-card 
-				[is-active]="false" 
-				product-code="cm"
-				product-title="Competence Management"
-				product-description="Lorum ipsum solar dolar"
-				product-cta="Want to know more about Competence Management? Request a call from your Account Manager"
-				[marketing-cta-as-button]="true"
-			></tf-ng-ph-overview-card>
-		</tf-ng-info-panel-item-container>
-		
-
-	</tf-ng-info-panel>
-
-
-
-	
-	<!-- <tf-ng-card colour="navy">
+	<tf-ng-card colour="navy">
 		<div class="row">
 			<div class="row-item">
 				<tf-ng-stat-data-card colour="red">
@@ -71,17 +51,6 @@
 		</div>
 		
 
-	</tf-ng-card> -->
-
-	<tf-ng-card>
-		<tf-ng-card-content>
-			<tf-ng-status colour="green">LIVE</tf-ng-status>
-			<tf-ng-status colour="amber">Pending</tf-ng-status>
-			<tf-ng-status colour="red">ARCHIVED</tf-ng-status>
-			<tf-ng-status colour="grey">Disabled</tf-ng-status>
-			<tf-ng-status colour="blue">Status</tf-ng-status>
-			<tf-ng-status >Status</tf-ng-status>
-			<tf-ng-status colour="aqua">AQUA</tf-ng-status>
-			<tf-ng-status colour="navy">Navy</tf-ng-status>
-		</tf-ng-card-content>
-	</tf-ng-card>
+	</tf-ng-card> 
+	
+</tf-ng-main-content>

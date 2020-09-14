@@ -1,4 +1,10 @@
 main{
-	padding: 0 1.4rem;
+	padding: 0 0.93rem;
 	display: block;
+}
+
+@media (min-width: 640px) {
+	main{
+		padding: 0 1.4rem;
+	}
 }

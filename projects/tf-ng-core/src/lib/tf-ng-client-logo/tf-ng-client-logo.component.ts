@@ -1,4 +1,4 @@
-import { Component, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'tf-ng-client-logo',
@@ -18,6 +18,10 @@ export class TfNgClientLogoComponent {
 		return this._clientLogoSource;
 	}
 
+	@Input("show-user-account") showUserAccount:boolean = false;
+	@Input("is-open") isOpen:boolean = false;
+	@Output('is-open-clicked') isOpenClicked = new EventEmitter<boolean>();
+
 	@ViewChild('imgRef') imgRef: ElementRef;
 
 	initialiseImage(){
@@ -30,5 +34,10 @@ export class TfNgClientLogoComponent {
 		}else{
 			this.logoImageClass = "height-dom";
 		}
+	}
+
+	onToggle(){
+		this.isOpen = !this.isOpen;
+		this.isOpenClicked.emit(this.isOpen);
 	}
 }
