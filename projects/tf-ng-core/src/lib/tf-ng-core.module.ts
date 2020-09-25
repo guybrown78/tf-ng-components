@@ -28,6 +28,10 @@ import { TfNgButtonComponent } from './tf-ng-button/tf-ng-button.component';
 import { TfNgInfoPanelComponent } from './tf-ng-info-panel/tf-ng-info-panel.component';
 import { TfNgInfoPanelItemContainerComponent } from './tf-ng-info-panel-item-container/tf-ng-info-panel-item-container.component';
 import { TfNgIconUserComponent } from './icons/tf-ng-icon-user/tf-ng-icon-user.component';
+import { TfNgFormHeroComponent } from './tf-ng-form-hero/tf-ng-form-hero.component';
+import { TfNgAppWrapperComponent } from './tf-ng-app-wrapper/tf-ng-app-wrapper.component';
+import { TfNgFormTitleComponent } from './tf-ng-form-title/tf-ng-form-title.component';
+import { TfNgOpenSideDrawerComponent } from './tf-ng-open-side-drawer/tf-ng-open-side-drawer.component';
 
 
 @NgModule({
@@ -55,7 +59,12 @@ import { TfNgIconUserComponent } from './icons/tf-ng-icon-user/tf-ng-icon-user.c
 		TfNgStatusBeaconComponent, 
 		TfNgButtonComponent, 
 		TfNgInfoPanelComponent, 
-		TfNgInfoPanelItemContainerComponent, TfNgIconUserComponent,
+		TfNgInfoPanelItemContainerComponent, 
+		TfNgIconUserComponent, 
+		TfNgFormHeroComponent, 
+		TfNgAppWrapperComponent, 
+		TfNgFormTitleComponent, 
+		TfNgOpenSideDrawerComponent,
 	],
   imports: [
 		BrowserModule,
@@ -79,6 +88,10 @@ import { TfNgIconUserComponent } from './icons/tf-ng-icon-user/tf-ng-icon-user.c
 		TfNgStatusBeaconComponent, 
 		TfNgInfoPanelComponent, 
 		TfNgInfoPanelItemContainerComponent, 
+		TfNgFormHeroComponent, 
+		TfNgAppWrapperComponent,
+		TfNgFormTitleComponent,
+		TfNgOpenSideDrawerComponent,
 	],
 	providers: [
 		TfNgToggleDrawerService

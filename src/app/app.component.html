@@ -1,56 +1,72 @@
-<app-header></app-header>
-<app-navigation></app-navigation>
+<tf-ng-app-wrapper>
+	<app-header></app-header>
+	<app-navigation></app-navigation>
 
-<tf-ng-main-content>
-	
-	<tf-ng-page-title-breadcrumbs>
-		<span>hello</span>
-		<span>dashboard</span>
-		<span>hello</span>
-		<tf-ng-hexagon 
-			size="m" 
-			colour="aqua"
-			outline-colour="aqua"
-			right
-		></tf-ng-hexagon>
-	</tf-ng-page-title-breadcrumbs>
 
-	<tf-ng-card>
-		<p>Lorum ipsum ...</p>
-	</tf-ng-card>
-	
-	<tf-ng-form-card>
-		<p>Lorum ipsum ...</p>
-	</tf-ng-form-card>
 
-	<tf-ng-card colour="navy">
-		<div class="row">
-			<div class="row-item">
-				<tf-ng-stat-data-card colour="red">
+
+	<tf-ng-main-content>
+		
+		<tf-ng-form-hero [showError]="true">
+			<tf-ng-form-title>
+				<h2> Welcome to Transform, <span>please&nbsp;sign&nbsp;in&nbsp;below.</span></h2>
+			</tf-ng-form-title>
+			<div>hhshgsjhsgjhsjhsgjhsgsjhgsjhgsjhsjh</div>
+
+			<div formerrors>error</div>
+		</tf-ng-form-hero>
+
+		<!-- <tf-ng-page-title-breadcrumbs>
+			<span>hello</span>
+			<span>dashboard</span>
+			<span>hello</span>
+			<tf-ng-hexagon 
+				size="m" 
+				colour="aqua"
+				outline-colour="aqua"
+				right
+			></tf-ng-hexagon>
+		</tf-ng-page-title-breadcrumbs> -->
+
+		<!-- <tf-ng-card>
+			<p>Lorum ipsum ...</p>
+		</tf-ng-card> -->
+		
+		<!-- <tf-ng-form-card>
+			<p>Lorum ipsum ... form card</p>
+		</tf-ng-form-card> -->
+
+		<!--
+		<tf-ng-card colour="navy">
+			<div class="row">
+				<div class="row-item">
+					<tf-ng-stat-data-card colour="red">
+						<span title>Title</span>
+						<span data>9999988845159999.9999%</span>
+					</tf-ng-stat-data-card>
+				</div>
+				
+				<div class="row-item">
+				<tf-ng-stat-data-card colour="amber">
 					<span title>Title</span>
-					<span data>9999988845159999.9999%</span>
+					<span data>999998884ata-card</span>
 				</tf-ng-stat-data-card>
+				</div>
+				
+
+				<div class="row-item">
+						<tf-ng-stat-data-card colour="green">
+					<span title>Title</span>
+					<span data>159999.9999%</span>
+				</tf-ng-stat-data-card>
+				</div>
+			
+
 			</div>
 			
-			<div class="row-item">
-			<tf-ng-stat-data-card colour="amber">
-				<span title>Title</span>
-				<span data>999998884ata-card</span>
-			</tf-ng-stat-data-card>
-			</div>
-			
 
-			<div class="row-item">
-					<tf-ng-stat-data-card colour="green">
-				<span title>Title</span>
-				<span data>159999.9999%</span>
-			</tf-ng-stat-data-card>
-			</div>
-		
-
-		</div>
-		
-
-	</tf-ng-card> 
-	
-</tf-ng-main-content>
+		</tf-ng-card> 
+		-->
+		<tf-ng-open-side-drawer></tf-ng-open-side-drawer>
+	</tf-ng-main-content>
+</tf-ng-app-wrapper>

@@ -8,12 +8,23 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TfNgProductInitialsComponent implements OnInit {
 	@Input('size') size: string = "default";
 	@Input('colour') colour: string = "default";
-	@Input('code') code: string;
+	// @Input('code') code: string;
+
+	private _code: string;
+    
+	@Input("code") set code(value: string) {
+		this._code = value;
+		this.clientCode = this.getClientInitials(this._code)
+	}
+
+	get code(): string {
+		return this._code;
+	}
 	clientCode:string;
   constructor() { }
 
   ngOnInit() {
-		this.clientCode = this.getClientInitials(this.code)
+		this.clientCode = this.getClientInitials(this._code)
   }
 
 	getClientInitials(code:string){

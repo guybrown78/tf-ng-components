@@ -1,0 +1,13 @@
+<div class="form-hero-card-wrapper">
+	<div class="form-hero-card top">
+		<ng-content></ng-content>
+	</div>
+	<div 
+		class="form-hero-card errors"
+		[ngClass]="[showError ? 'show' : 'hide']"
+	>
+		<ng-content 
+			select="[formerrors]"
+		></ng-content>
+	</div>
+</div>
