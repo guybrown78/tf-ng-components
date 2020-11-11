@@ -2,10 +2,10 @@
 
 	<div class="app-logo-container">
 		<div *ngIf="showAppLogo" class="app-logo">
-			<tf-ng-hexagon 
+			<tf-ng-hexagon
 				size="xl"
 				[colour]="isLogoClickable ? 'gradient' : 'white'"
-				outline-colour="blue"
+				outline-colour="header-outline"
 				[as-button]="isLogoClickable"
 				class="app-logo-icon"
 				(click)="onProductLogoClicked($event)"
@@ -24,9 +24,9 @@
 	<div class="central-contailer">
 		<ng-content select="[quickLinks]"></ng-content>
 	</div>
-	
-	<ng-content 
+
+	<ng-content
 		select="[clientLogo]"
 	></ng-content>
-	
+
 </header>

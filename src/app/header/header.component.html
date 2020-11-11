@@ -1,20 +1,23 @@
-<tf-ng-header 
+<tf-ng-header
 	app-code="T"
 	app-title="Transform"
 >
 
-	<tf-ng-hexagon 
-		size="xl" 
+	<tf-ng-hexagon
+		size="l"
 		colour="aqua"
-		outline-colour="blue"
+		outline-colour="aqua"
 		quickLinks
 	>
 	</tf-ng-hexagon>
 
-	<tf-ng-client-logo 
+  <tf-ng-client-logo
+    id="tfAppHeaderClientLogo"
 		clientLogo
 		client-logo-source="https://logodix.com/logo/80482.png"
-		show-user-account="true"
+    show-user-account="true"
+    [is-open]="isUserAccountsMenuOpen"
+		(is-open-clicked)="onUserAccountsMenuToggle($event)"
 	>
 		<ul userAccountMenu>
 			<li>one</li>

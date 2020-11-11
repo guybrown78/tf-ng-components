@@ -59,7 +59,8 @@
 
 .account-navigation-icon{
 	width:15px;
-	height:20px;
+  height:20px;
+  pointer-events: none;
 }
 .navy{
 	color: #363154;

@@ -8,7 +8,7 @@ import { Component, Input, Output, EventEmitter, ViewChild, ElementRef } from '@
 export class TfNgClientLogoComponent {
 	logoImageClass: string = "evaluate";
 	private _clientLogoSource: string;
-    
+
 	@Input("client-logo-source") set clientLogoSource(value: string) {
 		this._clientLogoSource = value;
 		this.initialiseImage();
@@ -27,7 +27,7 @@ export class TfNgClientLogoComponent {
 	initialiseImage(){
 		this.logoImageClass = "evaluate"
 	}
-	
+
 	onClientLogoLoaded() {
 		if(this.imgRef.nativeElement.width > this.imgRef.nativeElement.height){
 			this.logoImageClass = "width-dom";

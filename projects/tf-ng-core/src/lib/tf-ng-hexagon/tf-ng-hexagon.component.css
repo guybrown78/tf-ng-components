@@ -48,7 +48,8 @@
 	align-items: center;
 	top:0;
 	left: 0;
-	z-index: 20;
+  z-index: 20;
+  pointer-events: none;
 }
 .hex-outline{
 	fill:currentColor;
@@ -69,7 +70,7 @@
 	width:35px;
 	height:40px;
 }
-.size-m, 
+.size-m,
 .size-default{
 	width:40px;
 	height:46px;
@@ -83,28 +84,63 @@
 	height:58px;
 }
 
+.button .default,
+.button .white,
+.button .grey,
+.button .navy,
+.button .aqua,
+.button .blue,
+.button .header-outline
+{
+  transition-property: color;
+	transition-duration: 300ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .grey{
 	color: #D0DFE3;
 	/* fill: #D0DFE3; */
 }
+.button:hover .grey{
+	color: #E2EBEE;
+}
+
 .default, .white{
 	color: #FFFFFF;
 	/* fill: #FFFFFF; */
 }
+.button:hover .default, .button:hover .white{
+	color: #E2EBEE;
+}
+
 .navy{
 	color: #363154;
 	/* fill: #363154; */
 }
+.button:hover .navy{
+	color: #868398;
+}
+
 .blue{
 	color: #224595;
 	/* fill: #224595; */
+}
+.button:hover .blue{
+	color: #7A8FBF;
 }
 .aqua{
 	color: #32F7DC;
 	/* fill: #32F7DC; */
 }
+.button:hover .aqua{
+	color: #84FAEA;
+}
 
-
+.header-outline{
+  color: #224595;
+}
+.button:hover .header-outline{
+	color: #1E3D85;
+}
 
 .glow-size-xs{
 	width:28px;
@@ -114,7 +150,7 @@
 	width:33px;
 	height:33px;
 }
-.glow-size-m, 
+.glow-size-m,
 .glow-size-default{
 	width:38px;
 	height:38px;
