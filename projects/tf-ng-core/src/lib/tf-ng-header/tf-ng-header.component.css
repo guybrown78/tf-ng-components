@@ -35,7 +35,7 @@ header{
 	font-weight: 400;
 	display: none;
 }
-.central-contailer{
+.central-container{
 	display: none;
 	flex: 1 1 0%;
 	padding: 0 3.125rem;
@@ -47,7 +47,7 @@ header{
 	.app-logo-title{
 		display: block;
 	}
-	.central-contailer{
+	.central-container{
 		display: flex;
 	}
 }
