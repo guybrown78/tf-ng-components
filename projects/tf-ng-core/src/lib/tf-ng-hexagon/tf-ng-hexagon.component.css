@@ -1,3 +1,4 @@
+
 .hex-container{
 	position: relative;
 	display:flex;
@@ -193,4 +194,7 @@
 	-webkit-box-shadow: 0px 0px 6px 3px rgba(50,247,220,1);
 	-moz-box-shadow: 0px 0px 6px 3px rgba(50,247,220,1);
 	box-shadow: 0px 0px 6px 3px rgba(50,247,220,1);
+}
+::slotted(*){
+  pointer-events: none;
 }

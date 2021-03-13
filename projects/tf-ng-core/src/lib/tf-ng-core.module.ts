@@ -32,6 +32,7 @@ import { TfNgFormHeroComponent } from './tf-ng-form-hero/tf-ng-form-hero.compone
 import { TfNgAppWrapperComponent } from './tf-ng-app-wrapper/tf-ng-app-wrapper.component';
 import { TfNgFormTitleComponent } from './tf-ng-form-title/tf-ng-form-title.component';
 import { TfNgOpenSideDrawerComponent } from './tf-ng-open-side-drawer/tf-ng-open-side-drawer.component';
+import { TfNgItemComponent } from './tf-ng-item/tf-ng-item.component';
 
 
 @NgModule({
@@ -65,6 +66,7 @@ import { TfNgOpenSideDrawerComponent } from './tf-ng-open-side-drawer/tf-ng-open
 		TfNgAppWrapperComponent,
 		TfNgFormTitleComponent,
 		TfNgOpenSideDrawerComponent,
+		TfNgItemComponent,
 	],
   imports: [
 		BrowserModule,
@@ -99,6 +101,7 @@ import { TfNgOpenSideDrawerComponent } from './tf-ng-open-side-drawer/tf-ng-open
     TfNgIconAddComponent,
     TfNgIconUserComponent,
     TfNgIconCloseComponent,
+    TfNgItemComponent,
 	],
 	providers: [
 		TfNgToggleDrawerService

@@ -1,0 +1,46 @@
+:host{
+  display: flex;
+  width:100%;
+}
+.item{
+  flex:1 0 0%;
+	border-radius: 0.18rem;
+}
+.item.padding-default{
+	padding: 0.9375rem 0.9375rem;
+}
+.item.padding-none{
+	padding: 0;
+}
+.item.default, .item.grey{
+	background-color: #D0DFE3;
+}
+.item.white{
+	background-color: #FFFFFF;
+}
+.item.navy{
+	background-color: #363154;
+}
+.item.blue{
+	background-color: #224595;
+}
+.item.aqua{
+	background-color: #32F7DC;
+}
+.item.transparent{
+	background-color: transparent;
+	box-shadow: none;
+}
+.item.dark{
+	background-color: #25223A;
+}
+@media (min-width: 640px) {
+
+  .item{
+
+  }
+
+	.item.padding-default{
+		padding: 0.9375rem 1.4rem;
+	}
+}

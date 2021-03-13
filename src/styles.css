@@ -21,3 +21,39 @@ body {
 	display:flex;
 	flex:1 1 0%;
 } */
+
+.tf-host-block{
+  border:solid 1px red;
+  display: block;
+}
+.tf-block-size-xs,
+.tf-block-size-xsmall,
+.tf-block-size-extrasmall,
+.tf-block-size-extra-small{
+	width:32px;
+	height:36px;
+}
+.tf-block-size-s,
+.tf-block-size-small{
+	width:37px;
+	height:42px;
+}
+.tf-block-size-m,
+.tf-block-size-medium,
+.tf-block-size-default{
+	width:42px;
+	height:49px;
+}
+.tf-block-size-l,
+.tf-block-size-large{
+	width:47px;
+	height:54px;
+}
+.tf-block-size-xl,
+.tf-block-size-xlarge,
+.tf-block-size-extralarge,
+.tf-block-size-extra-large{
+	width:52px;
+	height:60px;
+}
+

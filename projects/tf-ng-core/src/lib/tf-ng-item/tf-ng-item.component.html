@@ -1,0 +1,11 @@
+<div
+  class="item"
+	[ngClass]="[
+		colour,
+		padding === 'none' ? 'padding-none' : 'padding-default'
+	]"
+>
+  <ng-content select="[start]"></ng-content>
+	<ng-content></ng-content>
+  <ng-content select="[end]"></ng-content>
+</div>
