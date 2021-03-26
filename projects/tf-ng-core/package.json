@@ -2,8 +2,8 @@
   "name": "tf-ng-core",
   "version": "0.0.28",
   "peerDependencies": {
-    "@angular/common": "^9.1.13",
-    "@angular/core": "^9.1.13"
+    "@angular/common": "~10.2.4",
+    "@angular/core": "~10.2.4"
   },
   "dependencies": {}
 }
