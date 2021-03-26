@@ -7,8 +7,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 	styleUrls: ['./tf-ng-hexagon.component.css'],
   host: {
     '[class]' : 'hostClassNames' ,
-  },
-  encapsulation: ViewEncapsulation.ShadowDom
+  }
 })
 export class TfNgHexagonComponent implements OnInit {
   private _size:string = "default";

@@ -59,10 +59,7 @@
 	width:100%;
 	height:100%;
 }
-.medium{
-	width:40px;
-	height:46px;
-}
+
 .size-xs{
 	width:30px;
 	height:34px;
@@ -71,7 +68,7 @@
 	width:35px;
 	height:40px;
 }
-.size-m,
+.size-m, .medium
 .size-default{
 	width:40px;
 	height:46px;
@@ -194,7 +191,4 @@
 	-webkit-box-shadow: 0px 0px 6px 3px rgba(50,247,220,1);
 	-moz-box-shadow: 0px 0px 6px 3px rgba(50,247,220,1);
 	box-shadow: 0px 0px 6px 3px rgba(50,247,220,1);
-}
-::slotted(*){
-  pointer-events: none;
 }

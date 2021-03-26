@@ -11,7 +11,8 @@ export class TfNgHeaderComponent implements OnInit {
 	@Input("show-app-logo") showAppLogo:boolean = true;
 	@Input("app-title") appTitle:string = "";
 	@Input("app-code") appCode:string = "";
-  constructor(	
+  @Input("app-logo-size") appLogoSize:string = "xl"
+  constructor(
 		private toggleService: TfNgToggleDrawerService
 	) { }
 

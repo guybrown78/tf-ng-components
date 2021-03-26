@@ -1,7 +1,20 @@
 <tf-ng-header
-	app-code="T"
-	app-title="Transform"
+  [show-app-logo]="true"
+  [is-logo-clickable]="false"
+  [app-logo-size]="'m'"
+  app-code="T"
 >
+
+  <div
+    headerIcons
+  >
+    <tf-ng-hexagon
+      size="m"
+      colour="aqua"
+      outline-colour="aqua"
+    >
+    </tf-ng-hexagon>
+  </div>
 
 	<tf-ng-hexagon
 		size="l"

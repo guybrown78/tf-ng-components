@@ -3,9 +3,9 @@
 	<div class="app-logo-container">
 		<div *ngIf="showAppLogo" class="app-logo">
 			<tf-ng-hexagon
-				size="xl"
+				[size]="appLogoSize"
 				[colour]="isLogoClickable ? 'gradient' : 'white'"
-				outline-colour="header-outline"
+				[outline-colour]="isLogoClickable ? 'header-outline' : 'white'"
 				[as-button]="isLogoClickable"
 				class="app-logo-icon"
 				(click)="onProductLogoClicked($event)"
@@ -17,10 +17,13 @@
 					size="l"
 				></tf-ng-product-initials>
 			</tf-ng-hexagon>
-			<h1 class="app-logo-title">{{ appTitle }}</h1>
+			<h1 *ngIf="appTitle.length" class="app-logo-title">{{ appTitle }}</h1>
 		</div>
 	</div>
 
+  <div class="app-icon-container">
+    <ng-content select="[headerIcons]"></ng-content>
+  </div>
 
 	<div class="central-container">
 		<ng-content select="[quickLinks]"></ng-content>

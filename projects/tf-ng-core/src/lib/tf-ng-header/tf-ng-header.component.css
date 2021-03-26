@@ -1,5 +1,5 @@
 header{
-	padding: 0 1.4rem;
+	padding: 0 0.6rem;
 	margin-bottom: 1.4rem;
 	height:74px;
 	display: flex;
@@ -14,11 +14,10 @@ header{
 .app-logo{
 	display: flex;
 	align-items: center;
+  margin-right: 0.75rem;
 }
 
-.app-logo-icon{
-	/* blue text ? */
-}
+.app-logo-icon{}
 .app-logo-icon.clickable{
 	cursor: pointer;
 }
@@ -35,6 +34,12 @@ header{
 	font-weight: 400;
 	display: none;
 }
+.app-icon-container{
+  display: flex;
+  align-items: flex-end;
+  flex: 1 1 0%;
+	justify-content: flex-start;
+}
 .central-container{
 	display: none;
 	flex: 1 1 0%;
@@ -50,4 +55,7 @@ header{
 	.central-container{
 		display: flex;
 	}
+  header{
+    padding: 0 1.4rem;
+  }
 }
